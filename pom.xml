@@ -75,8 +75,21 @@
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
+			<version>12.6.4.jre11</version> <!-- Kiểm tra phiên bản mới nhất -->
 			<scope>runtime</scope>
-    	</dependency>
+		</dependency>
+
+		
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.1.0</version> <!-- Sử dụng phiên bản mới nhất, kiểm tra trên Maven Repository nếu cần -->
+		</dependency>
 	</dependencies>
 
 	<build>
